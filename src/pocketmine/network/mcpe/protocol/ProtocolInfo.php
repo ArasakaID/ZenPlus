@@ -42,6 +42,8 @@ interface ProtocolInfo{
 	public const MINECRAFT_VERSION = 'v1.16.20';
 	/** Version number sent to clients in ping responses. */
 	public const MINECRAFT_VERSION_NETWORK = '1.16.20';
+	
+	public const ALLOWED_PROTOCOLS = [407, 408];
 
 	public const LOGIN_PACKET = 0x01;
 	public const PLAY_STATUS_PACKET = 0x02;
