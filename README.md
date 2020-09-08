@@ -8,6 +8,12 @@ A less-feature server software for Minecraft: Bedrock Edition. This is fork from
 ### Waterdog
 - Fix address blocked for 300 seconds
 
+# Requirements
+- PHP >= 7.3.0 from PocketMine-MP
+- Composer
+
 # How to Compile
-1. Type ```cd build``` folder
-2. Type ```/your/php/path/php -dphar.readonly=0 ConsoleScript.php --make src --relative ./ --entry ../src/pocketmine/PocketMine.php --out PocketMine-MP.phar```
+1. Open terminal or command prompt.
+2. Type ```composer install```
+3. Type ```cd build``` folder
+4. Type ```/your/php/path/php -dphar.readonly=0 ConsoleScript.php --make src --relative ./ --entry ../src/pocketmine/PocketMine.php --out PocketMine-MP.phar```
