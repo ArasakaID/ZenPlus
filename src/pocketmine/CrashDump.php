@@ -116,6 +116,9 @@ class CrashDump{
 		if(!is_dir($this->server->getDataPath() . "crashdumps")){
 			mkdir($this->server->getDataPath() . "crashdumps");
 		}
+        if(!is_dir($this->server->getDataPath() . "errordumps")){
+            mkdir($this->server->getDataPath() . "errordumps");
+        }
 		$this->path = $this->server->getDataPath() . "crashdumps/" . date("D_M_j-H.i.s-T_Y", $this->time) . ".log";
 		$fp = @fopen($this->path, "wb");
 		if(!is_resource($fp)){

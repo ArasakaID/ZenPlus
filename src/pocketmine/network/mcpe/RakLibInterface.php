@@ -23,6 +23,7 @@ declare(strict_types=1);
 
 namespace pocketmine\network\mcpe;
 
+use pocketmine\ErrorDump;
 use pocketmine\event\player\PlayerCreationEvent;
 use pocketmine\network\AdvancedSourceInterface;
 use pocketmine\network\mcpe\protocol\BatchPacket;
@@ -187,6 +188,7 @@ class RakLibInterface implements ServerInstance, AdvancedSourceInterface{
                         }
                     }
                 }
+                ErrorDump::writeError($this->server, $e);
 			}
 		}
 	}
