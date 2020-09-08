@@ -3069,7 +3069,7 @@ class Player extends Human implements CommandSender, ChunkLoader, IPlayer{
 
 		$isFlying = $packet->getFlag(AdventureSettingsPacket::FLYING);
 		if($isFlying and !$this->allowFlight){
-			$this->kick($this->server->getLanguage()->translateString("kick.reason.cheat", ["%ability.flight"]));
+			//$this->kick($this->server->getLanguage()->translateString("kick.reason.cheat", ["%ability.flight"]));
 			return true;
 		}elseif($isFlying !== $this->isFlying()){
 			$ev = new PlayerToggleFlightEvent($this, $isFlying);
@@ -3085,7 +3085,7 @@ class Player extends Human implements CommandSender, ChunkLoader, IPlayer{
 		}
 
 		if($packet->getFlag(AdventureSettingsPacket::NO_CLIP) and !$this->allowMovementCheats and !$this->isSpectator()){
-			$this->kick($this->server->getLanguage()->translateString("kick.reason.cheat", ["%ability.noclip"]));
+			//$this->kick($this->server->getLanguage()->translateString("kick.reason.cheat", ["%ability.noclip"]));
 			return true;
 		}
 
