@@ -9,5 +9,5 @@ A less-feature server software for Minecraft: Bedrock Edition. This is fork from
 - Fix address blocked for 300 seconds
 
 # How to Compile
-1. Go to ```build``` folder
-2. Type ```/your/php/path/php -dphar.readonly=0 ConsoleScript.php --make src --relative ./ --entry src/pocketmine/PocketMine.php --out PocketMine-MP.phar```
+1. Type ```cd build``` folder
+2. Type ```/your/php/path/php -dphar.readonly=0 ConsoleScript.php --make src --relative ./ --entry ../src/pocketmine/PocketMine.php --out PocketMine-MP.phar```
